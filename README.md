@@ -8,3 +8,7 @@ A showcase gallery component implemented using Node, Gulp, Browserify, Coffeescr
 $ npm install
 $ gulp
 ```
+
+### Demo
+
+[Creuna Gallery demo site](http://cg.oer.dk)
