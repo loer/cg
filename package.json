@@ -1,0 +1,46 @@
+{
+  "name": "Creuna_Gallery",
+  "version": "0.0.1",
+  "description": "A showcase gallery implementation",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/loer/cg.git"
+  },
+  "author": "Lars Øer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/loer/cg.git/issues"
+  },
+  "homepage": "https://github.com/loer/cg.git#readme",
+  "dependencies": {
+    "gsap": "^1.19.0",
+    "mobile-detect": "^1.3.5"
+  },
+  "devDependencies": {
+    "browserify": "^13.1.1",
+    "coffee-script": "^1.11.1",
+    "coffeeify": "^2.0.1",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-coffee": "^2.3.3",
+    "gulp-coffeelint": "^0.6.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-livereload": "^3.8.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sourcemaps": "^2.2.0",
+    "gulp-stylus": "^2.6.0",
+    "gulp-uglify": "^2.0.0",
+    "gulp-util": "^3.0.7",
+    "handlebars": "^4.0.6",
+    "hbsfy": "^2.7.0",
+    "kouto-swiss": "^0.12.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}

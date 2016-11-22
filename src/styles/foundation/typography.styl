@@ -1,0 +1,36 @@
+heading()
+	font-family $din
+	font-weight $bold
+	letter-spacing .05em
+	text-transform uppercase	
+
+body
+	font-family $roboto
+	font-size $bodySize
+	font-weight $light
+
+h1
+h2
+h3
+	heading()
+	letter-spacing 0.2em;
+	margin 1rem 0 .5rem
+
+h1
+	font-size 4rem
+	line-height 1em
+	text-transform uppercase	
+
+h2
+	font-size 2rem
+
+h3
+	font-size 1.5rem
+
+
+body
+	+mobile()
+		font-size $bodySizeMobile
+
+	h1
+		font-size 2em

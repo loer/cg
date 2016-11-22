@@ -1,0 +1,27 @@
+html
+body
+	background $grey
+	height 100%
+	width 100%
+
+body
+	margin 0
+	display table
+
+	> main
+		display table-cell
+		padding $headerHeight 0
+		vertical-align top
+
+		&.vcenter
+			vertical-align middle
+
+body
+	+mobile()
+		> main
+			display table-cell
+			padding $headerHeightMobile 0
+
+img
+	display block
+	margin 0

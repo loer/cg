@@ -1,0 +1,15 @@
+<div class="slider-wrap" data-ui="gallery-wrapper">
+	<ul class="slider-items" data-ui="gallery-items">
+		{{#each items}}
+			<li data-ui="gallery-item">
+				<a href="#">
+					<img src="{{image}}" alt="">
+					<strong>{{heading}}</strong>
+					<span>{{subheading}}</span>
+				</a>
+			</li>
+		{{/each}}
+	</ul>
+</div>
+<a href="#" class="btn-prev" data-ui="gallery-nav-prev">prev</a>
+<a href="#" class="btn-next" data-ui="gallery-nav-next">next</a>

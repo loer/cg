@@ -1,0 +1,149 @@
+.top
+	position relative
+	width 80%
+	margin 0 auto
+	
+	.gallery-header
+		background-color $black
+		margin 2em $gutter calc($gutter*2)
+		padding .5em 0
+		text-align center
+		color $white
+	
+	.slider-rect
+		width 100%
+
+.bottom
+	clearfix()
+	position relative
+	width 80%
+	margin 3em auto 0
+	
+	.info
+		width 30%
+		background-color $lightGrey
+		margin 0 1em
+		padding 1em 2em
+		float left
+
+		ul
+			list-style-type square
+			padding 0 1em
+			
+			li
+				margin-top .5em
+
+	.slider-portrait
+		width 50%
+		float right
+
+		[data-ui=gallery-item] a
+			strong
+			span
+				display none				
+.slider-hero
+	width 100%
+	margin 0 auto
+	
+	[data-ui=gallery-item]
+		width 100%		
+		a
+			margin 0
+		strong
+			text-align center
+
+
+	.btn-prev
+	.btn-next
+		background-image none
+		width 60px
+		height 60px
+		background-color rgba(0, 0, 0, .5)
+		transform translate(0,-50%)
+		transition background-color .6s $easeOutCubic
+		
+		&::before
+		&::after
+			content ''
+			position absolute
+			top 50%
+			left 50%
+			width 40%
+			height 3px
+			background-color $white
+			transform-origin 100% 50%
+			transform translate(-60%, 1px) rotate(45deg)
+			transition all .2s $easeOutCubic
+		&::after
+			transform translate(-60%, -1px) rotate(-45deg)
+		&:hover
+			background-color rgba(0, 0, 0, .75)
+			&::before
+				transform translate(-60%, 1px) rotate(60deg)
+			&::after
+				transform translate(-60%, -1px) rotate(-60deg)
+
+	.btn-prev
+		&::before
+		&::after
+			transform-origin 0% 50%
+			transform translate(-50%, -1px) rotate(45deg)
+		&::after
+			transform translate(-50%, 1px) rotate(-45deg)
+		&:hover
+			&::before
+				transform translate(-50%, -1px) rotate(60deg)
+			&::after
+				transform translate(-50%, 1px) rotate(-60deg)
+.page-2
+	.bottom
+		.info
+			width 60%
+			display block
+			float inherit
+			margin 0 auto
+
+// Mobile
+.slider-hero
+	+mobile()
+		.btn-prev
+		.btn-next
+			width 35px
+			height 35px
+
+.top
+	+mobile()
+		width 100%
+		margin 0
+		
+		.gallery-header
+			margin 0
+
+.bottom
+	+mobile()
+		width 100%
+		margin 2em 0
+
+		.info
+			width 80%
+			background-color $lightGrey
+			margin 0 auto
+			padding 1em 0
+			float inherit
+			display block
+			
+			ul
+				padding 0
+				margin 0 2em
+
+		.slider-portrait
+			width 50%
+			margin 2em auto 0
+			float inherit
+			display block
+
+.page-2
+	+mobile()
+		.bottom
+			.info
+				width 80%
